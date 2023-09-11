@@ -1,0 +1,19 @@
+#include <iostream>
+
+// Función que devuelve el doble de un número entero
+int doubleNumber(int numero) {
+    return numero * 2; // Multiplicamos el número por 2 y devolvemos el resultado
+}
+
+int main() {
+    int numero;
+    std::cout << "Ingresa un número entero: ";
+    std::cin >> numero; // Solicitamos al usuario que ingrese un número entero
+
+    int resultado = doubleNumber(numero); // Llamamos a la función doubleNumber() para obtener el doble del número
+
+    // Mostramos el resultado al usuario
+    std::cout << "El doble de " << numero << " es " << resultado << std::endl;
+
+    return 0;
+}
